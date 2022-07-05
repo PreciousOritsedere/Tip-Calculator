@@ -35,31 +35,40 @@
               <span class="dollar-sign"
                 ><img src="./images/icon-dollar.svg" alt=""
               /></span>
-              <input type="number" name="" id="" class="inp" required />
+              <input type="number" name="bill" id="bill" class="inp" required />
             </div>
           </section>
           <section class="section2">
             <p class="tip">Select Tip %</p>
             <div class="value-button">
-              <button value="5" class="value_btn">5%</button>
-              <button value="10" class="value_btn">10%</button>
-              <button value="15" class="value_btn">15%</button>
-              <button value="25" class="value_btn">25%</button>
-              <button value="50" class="value_btn">50%</button>
+              <button id="five" value="5" class="value_btn">5%</button>
+              <button id="ten" value="10" class="value_btn">10%</button>
+              <button id="fifteen" value="15" class="value_btn">15%</button>
+              <button id="twentyFive" value="25" class="value_btn">25%</button>
+              <button id="fifty" value="50" class="value_btn">50%</button>
               <input
                 type="number"
                 placeholder="Custom"
+                id="custom"
                 class="value_btn value_custom"
               />
             </div>
           </section>
           <section class="section3">
-            <p class="num">Number of People</p>
+            <div class="errorMessage">
+              <p class="num">Number of People</p>
+              <p id="errorMessage"></p>
+            </div>
             <div class="people_count">
               <span class="icon-people"
                 ><img src="./images/icon-person.svg" alt=""
               /></span>
-              <input type="number" name="" id="" class="inp" />
+              <input
+                type="number"
+                name="noOfPeople"
+                id="noOfPeople"
+                class="inp inp-error"
+              />
             </div>
           </section>
         </section>
@@ -70,19 +79,20 @@
                 <p>Tip Amount</p>
                 <span class="person">/ person</span>
               </div>
-              <h2>$4.27</h2>
+              <h2 id="tipPerPerson">$4.27</h2>
             </div>
             <div class="total-person">
               <div class="">
                 <p>Total</p>
                 <span class="person">/ person</span>
               </div>
-              <h2>$32.79</h2>
+              <h2 id="totalPerPerson">$32.79</h2>
             </div>
           </div>
-          <button class="btn-main">RESET</button>
+          <button class="btn-main" id="reset">RESET</button>
         </section>
       </div>
     </div>
+    <script src="./js/app.js"></script>
   </body>
 </html>
