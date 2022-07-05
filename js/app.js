@@ -115,4 +115,5 @@ function resetTipCalculator() {
   custom.value = ''
   tipPerPerson.innerHTML = `$0.00`
   totalPerPerson.innerHTML = `$0.00`
+  removeActiveClass()
 }
